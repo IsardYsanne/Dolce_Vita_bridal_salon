@@ -1,0 +1,960 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/products.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"
+	integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
+	crossorigin="anonymous"></script>
+    <!-- <script src="https://maps.google.com/maps/api/js?sensor=false&amp;key="></script> -->
+</head>
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <div class="header__top top-header">
+                <div class="top-header__content _container">
+                    <div class="top-header__column">
+                        <div class="header__menu menu">
+                            <div class="menu__icon icon-menu">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+                            <nav class="menu__body">
+                                <ul class="menu__list">
+                                    <li><a href="" class="menu__link">Каталог</a></li>
+                                    <li><a href="" class="menu__link">Скидки</a></li>
+                                    <li><a href="" class="menu__link">Доставка</a></li>
+                                    <li><a href="" class="menu__link">Возврат</a></li>
+                                    <li><a href="" class="menu__link">Оплата</a></li>
+                                    <li><a href="" class="menu__link">Обратная связь</a></li>
+                                    <li><a href="mailto:beautydress@gmail.com" class="menu__link actions-header__item_email"><span>beautydress@gmail.com</span></a></li>
+                                    <li><a href="" class="info-header__callback"><span>Обратный звонок</span></a></li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                    <div class="top-header__column top-header__column_logo">
+                        <a href="" class="top-header__logo">
+                            <img src="img/logo.png" width="150" height="92" alt="">
+                        </a>
+                    </div>
+                    <div class="top-header__column">
+                        <div class="top-header__contacts contacts-header">
+                            <div class="contacts-header__column">
+                                <div class="contacts-header__item contacts-header__item_icon">
+                                    <div class="contacts-header__label">Екатеринбург</div>
+                                    <a href="tel:83431251729" class="contacts-header__phone">8-343-125-17-29</a>
+                                </div>
+                            </div>
+                            <div class="contacts-header__column contacts-header__column_forcart">
+                                <div class="contacts-header__item contacts-header__item_second-phone">
+                                    <div class="contacts-header__label">Бесплатно по РФ</div>
+                                    <a href="tel:83431251729" class="contacts-header__phone">8-343-125-17-29</a>
+                                </div>
+                            </div>
+                            <div class="contacts-header__column">
+                                <a href="" class="info-header__cart">
+                                    <span>123</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="header__bottom bottom-header">
+                <div class="bottom-header__container _container">
+                    <div class="bottom-header__row">
+                        <div class="bottom-header__column">
+                            <ul class="bottom-header__actions actions-header">
+                                <li>
+                                    <a href="" class="actions-header__item actions-header__item_login">
+                                        <span>Войти</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="" class="actions-header__item actions-header__item_reg">
+                                        <span>Зарегистрироваться</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="mailto:beautydress@gmail.com" class="actions-header__item actions-header__item_email">
+                                        <span>beautydress@gmail.com</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="bottom-header__column">
+                            <div class="bottom-header__info info-header">
+                                <div class="info-header__column">
+                                    <a href="" class="info-header__callback"><span>Обратный звонок</span></a>
+                                </div>
+                                <div class="info-header__column">
+                                    <div class="info-header__schedule">
+                                        <p><span>Пн–Пт:</span> 09:00–21:00;</p>
+                                        <p><span>Сб–Вс:</span> 10:00–20:00 </p>
+                                    </div>
+                                </div>
+                                <div class="info-header__column">
+                                    <a href="" class="info-header__cart">
+                                        <span>123</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <main class="page">
+            <div class="page__container _container">
+                <aside class="page__side">
+                    <!-- каталог сбоку -->
+                    <nav class="page__menu menu-page">
+                            <div class="menu-page__header">
+                                <div class="menu-page__title">Каталог товаров</div>
+                                <div class="menu-page__burger">
+                                    <div class="menu-page__lines">
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="menu-page__body">
+                                <ul class="menu-page__list">
+                                    <li class="menu-page__parent">
+                                        <a  href="" class="menu-page__link">Свадебные платья</a>
+                                        <div class="menu-page__submenu submenu-page">
+                                            <div class="submenu-page__item">
+                                                <ul class="submenu-page__menu">
+                                                    <li><a href="" class="submenu-page__link">Из шелка</a></li>
+                                                    <li><a href="" class="submenu-page__link">Из шифона</a></li>
+                                                    <li><a href="" class="submenu-page__link">Полиэстер</a></li>
+                                                    <li><a href="" class="submenu-page__link">Ситец</a></li>
+                                                </ul>
+                                                <div class="submenu-page__product">
+                                                    <div class="item-product">
+                                                        <div class="item-product__labels">
+                                                        </div>
+                                                        <a href="" class="item-product__image">
+                                                            <picture><source srcset="img/aside/dress1.webp" type="image/webp"><img width="200" height="160" src="img/aside/dress1.webp" alt="Milana.Italy."></picture>
+                                                        </a>
+                                                        <div class="item-product__body">
+                                                            <a href="" class="item-product__title">Платье Milana Italy</a>
+                                                            <div class="item-product__footer">
+                                                                <div class="item-product__old-price rub">74 490</div>
+                                                                <a href="" class="item-product__add"></a>
+                                                                <div class="item-product__price rub">59 600</div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li><a href="" class="menu-page__link">Украшения</a></li>
+                                    <li><a href="" class="menu-page__link">Клатчи</a></li>
+                                    <li><a href="" class="menu-page__link">Серьги</a></li>
+                                    <li class="menu-page__parent">
+                                        <a href="" class="menu-page__link">Букеты</a>
+                                        <div class="menu-page__submenu submenu-page">
+                                            <div class="submenu-page__item">
+                                                <ul class="submenu-page__menu">
+                                                    <li><a href="" class="submenu-page__link">Rose white</a></li>
+                                                    <li><a href="" class="submenu-page__link">Rose brother cadfael</a></li>
+                                                    <li><a href="" class="submenu-page__link">Лилии</a></li>
+                                                    <li><a href="" class="submenu-page__link">Полевые цветы</a></li>
+                                                </ul>
+                                                <div class="submenu-page__product">
+                                                    <div class="item-product">
+                                                        <div class="item-product__labels">
+                                                            <div class="item-product__label">Хит лета</div>
+                                                        </div>
+                                                        <a href="" class="item-product__image">
+                                                            <picture><source srcset="img/aside/pion.jpeg" type="image/webp"><img src="img/aside/pion.jpeg" width="200" height="160" alt="Тенисный стол. Зеленый."></picture>
+                                                        </a>
+                                                        <div class="item-product__body">
+                                                            <a href="" class="item-product__title">Пионы нежные</a>
+                                                            <div class="item-product__footer">
+                                                                <div class="item-product__old-price rub">4 490</div>
+                                                                <a href="" class="item-product__add"></a>
+                                                                <div class="item-product__price rub">3 490</div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li><a href="" class="menu-page__link">Свадебный декор</a></li>
+                                    <li class="menu-page__parent">
+                                        <a  href="" class="menu-page__link">Мужские свадебные костюмы</a>
+                                        <div class="menu-page__submenu submenu-page">
+                                            <div class="submenu-page__item">
+                                                <ul class="submenu-page__menu">
+                                                    <li><a href="" class="submenu-page__link">Шелк и шерсть</a></li>
+                                                    <li><a href="" class="submenu-page__link">Черные</a></li>
+                                                    <li><a href="" class="submenu-page__link">Серые</a></li>
+                                                    <li><a href="" class="submenu-page__link">Синие</a></li>
+                                                </ul>
+                                                <div class="submenu-page__product">
+                                                    <div class="item-product">
+                                                        <div class="item-product__labels">
+                                                        </div>
+                                                        <a href="" class="item-product__image">
+                                                            <picture><source srcset="img/aside/men.jpg" type="image/webp"><img width="200" height="160" src="img/aside/men.jpg" alt="Тенисный стол. Зеленый."></picture>
+                                                        </a>
+                                                        <div class="item-product__body">
+                                                            <a href="" class="item-product__title">Муской костюм Ludovic.Italy</a>
+                                                            <div class="item-product__footer">
+                                                                <div class="item-product__old-price rub">99 990</div>
+                                                                <a href="" class="item-product__add"></a>
+                                                                <div class="item-product__price rub">44 500</div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="menu-page__parent">
+                                        <a  href="" class="menu-page__link">Свадебные накидки</a>
+                                        <div class="menu-page__submenu submenu-page">
+                                            <div class="submenu-page__item">
+                                                <ul class="submenu-page__menu">
+                                                    <li><a href="" class="submenu-page__link">Норка</a></li>
+                                                    <li><a href="" class="submenu-page__link">Нутрия</a></li>
+                                                    <li><a href="" class="submenu-page__link">Кролик</a></li>
+                                                    <li><a href="" class="submenu-page__link">Эко-мех</a></li>
+                                                </ul>
+                                                <div class="submenu-page__product">
+                                                    <div class="item-product">
+                                                        <div class="item-product__labels">
+                                                            <div class="item-product__label">Зима 2021</div>
+                                                        </div>
+                                                        <a href="" class="item-product__image">
+                                                            <picture><source srcset="img/aside/woman.jpg" type="image/webp"><img width="200" height="160" src="img/aside/woman.jpg" alt="Тенисный стол. Зеленый."></picture>
+                                                        </a>
+                                                        <div class="item-product__body">
+                                                            <a href="" class="item-product__title">Накидка белая из кролика. Russia</a>
+                                                            <div class="item-product__footer">
+                                                                <div class="item-product__old-price rub">54 390</div>
+                                                                <a href="" class="item-product__add"></a>
+                                                                <div class="item-product__price rub">27 390</div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li><a href="" class="menu-page__link">Платья подружек невесты</a></li>
+                                    <li><a href="" class="menu-page__link">Фата</a></li>
+                                    <li><a href="" class="menu-page__link">Другое</a></li>
+                                </ul>
+                            </div>
+                    </nav>
+                    <!-- новости и отзывы -->
+                    <div class="page__content-side">
+                        <div class="page__side-news news-side">
+                            <a href="" class="news-side__title side-title">
+                                Fashion 2021
+                            </a>
+                            <div class="news-side__items">
+                                <div class="news-side__item">
+                                    <a href="" class="news-side__label">Расспродажа зимней коллекции 2021</a>
+                                    <div class="news-side__body">
+                                        <div class="news-side__date"> <span>30</span> мар</div>
+                                        <div class="news-side__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus assumenda saepe eligendi praesentium nam!</div>
+                                    </div>
+                                </div>
+                                <div class="news-side__item">
+                                    <a href="" class="news-side__label">Поступления новой коллекции лето 2021</a>
+                                    <div class="news-side__body">
+                                        <div class="news-side__date"> <span>20</span> апр</div>
+                                        <div class="news-side__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus assumenda saepe eligendi praesentium nam!</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="page__side-reviews reviews-side">
+                            <a href="" class="reviews-side__title side-title">
+                                Отзывы о нас
+                            </a>
+                            <div class="reviews-side__items">
+                                <a href="" class="reviews-side__item">
+                                    <div class="reviews-side__header">
+                                        <div class="reviews-side__user">Галина Юрьевна</div>
+                                        <div class="reviews-side__date">17.08.2020</div>
+                                    </div>
+                                    <div class="reviews-side__body">
+                                        Спасибо! Все очень круто, дай Бог вам здоровья!Спасибо! Все очень круто, дай Бог вам здоровья!Спасибо! Все очень круто, дай Бог вам здоровья!
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="reviews-side__items">
+                                <a href="" class="reviews-side__item">
+                                    <div class="reviews-side__header">
+                                        <div class="reviews-side__user">Маргарита Рифкатовна</div>
+                                        <div class="reviews-side__date">22.09.2020</div>
+                                    </div>
+                                    <div class="reviews-side__body">
+                                        Спасибо! Все очень круто, дай Бог вам здоровья!Спасибо! Все очень круто, дай Бог вам здоровья!Спасибо! Все очень круто, дай Бог вам здоровья!
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </aside>
+                <div class="page__content">
+                    <!-- делаем поисковую форму -->
+                    <form action="#" class="page__search search-page">
+                        <div class="search-page__select">
+                            <div class="search-page__title">
+                                <span>Искать среди</span>
+                                <!-- создаем еще один спан для отобранных категорий -->
+                                <span data-text="Выбрано:" class="search-page__quantity"></span>
+                            </div>
+                            <div class="search-page__categories categories-search">
+                                <div class="categories-search__row">
+                                    <div class="categories-search__column">
+                                        <ul class="categories-search__list">
+                                            <li>
+                                                <label class="categories-search__checkbox checkbox">
+                                                    <input data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+                                                    <span class="checkbox__text">
+                                                        <span>Свадебные платья</span>
+                                                    </span>
+                                                </label>
+                                            </li>
+                                            <li>
+                                                <label class="categories-search__checkbox checkbox">
+                                                    <input data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+                                                    <span class="checkbox__text">
+                                                        <span>Мужские костюмы</span>
+                                                    </span>
+                                                </label>
+                                            </li>
+                                            <li>
+                                                <label class="categories-search__checkbox checkbox">
+                                                    <input data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+                                                    <span class="checkbox__text">
+                                                        <span>Свадебные букеты</span>
+                                                    </span>
+                                                </label>
+                                            </li>
+                                            <li>
+                                                <label class="categories-search__checkbox checkbox">
+                                                    <input data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+                                                    <span class="checkbox__text">
+                                                        <span>Аксессуары</span>
+                                                    </span>
+                                                </label>
+                                            </li>
+                                            <li>
+                                                <label class="categories-search__checkbox checkbox">
+                                                    <input data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+                                                    <span class="checkbox__text">
+                                                        <span>Свадебные накидки</span>
+                                                    </span>
+                                                </label>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="categories-search__column">
+                                        <ul class="categories-search__list">
+                                            <li>
+                                                <label class="categories-search__checkbox checkbox">
+                                                    <input data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+                                                    <span class="checkbox__text"><span>Украшения</span></span>
+                                                </label>
+                                            </li>
+                                            <li>
+                                                <label class="categories-search__checkbox checkbox">
+                                                    <input data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+                                                    <span class="checkbox__text"><span>Свадебный инвентарь</span></span>
+                                                </label>
+                                            </li>
+                                            <li>
+                                                <label class="categories-search__checkbox checkbox">
+                                                    <input data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+                                                    <span class="checkbox__text"><span>Фата</span></span>
+                                                </label>
+                                            </li>
+                                            <li>
+                                                <label class="categories-search__checkbox checkbox">
+                                                    <input data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+                                                    <span class="checkbox__text"><span>Перчатки</span></span>
+                                                </label>
+                                            </li>
+                                            <li>
+                                                <label class="categories-search__checkbox checkbox">
+                                                    <input data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+                                                    <span class="checkbox__text"><span>Обувь</span></span>
+                                                </label>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="categories-search__column">
+                                        <ul class="categories-search__list">
+                                            <li>
+                                                <label class="categories-search__checkbox checkbox">
+                                                    <input data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+                                                    <span class="checkbox__text"><span>Клатчи, сумки</span></span>
+                                                </label>
+                                            </li>
+                                            <li>
+                                                <label class="categories-search__checkbox checkbox">
+                                                    <input data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+                                                    <span class="checkbox__text"><span>Платье подружки невесты</span></span>
+                                                </label>
+                                            </li>
+                                            <li>
+                                                <label class="categories-search__checkbox checkbox">
+                                                    <input data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+                                                    <span class="checkbox__text"><span>Мужские бабочки</span></span>
+                                                </label>
+                                            </li>
+                                            <li>
+                                                <label class="categories-search__checkbox checkbox">
+                                                    <input data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+                                                    <span class="checkbox__text"><span>Скатерти</span></span>
+                                                </label>
+                                            </li>
+                                            <li>
+                                                <label class="categories-search__checkbox checkbox">
+                                                    <input data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+                                                    <span class="checkbox__text"><span>Декор</span></span>
+                                                </label>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="search-page__input">
+                            <input autocomplete="off" type="text" name="form[]" data-error="Ошибка" data-value="" class="input">
+                        </div>
+                        <button type="submit" class="search-page__btn btn">Найти</button>
+                    </form>
+                    <!-- хлебные крошки -->
+                    <nav class="breadcrumbs">
+                        <ul class="breadcrumbs__list">
+                            <li>
+                                <a href="" class="breadcrumbs__link">Главная</a>
+                            </li>
+                            <li>
+                                <span class="breadcrumbs__item">Платье невесты</span>
+                            </li>
+                        </ul>
+                    </nav>
+                    <!-- продукт отдельно -->
+                    <section class="product">
+                        <h1 class="product__title">
+                            Dress Lolita <span>Свадебное платье</span>
+                        </h1>
+                        <div class="product__content">
+                            <div class="product__images images-product">
+                                <div class="images-product__mainslider _swiper">
+                                    <a href="" class="images-product__mainslide">
+                                        <div class="images-product__sale">-30%</div>
+                                        <!-- width="214" height="241" -->
+                                        <div class="images-product__image">
+                                            <img src="./img/products/full_belinda1.jpg" width="284" height="308" alt="">
+                                        </div>
+                                    </a>
+                                    <a href="" class="images-product__mainslide">
+                                        <div class="images-product__sale">2021</div>
+                                        <div class="images-product__image">
+                                            <img src="./img/products/full_belinda1.jpg" width="284" height="308" alt="">
+                                        </div>
+                                    </a>
+                                    <a href="" class="images-product__mainslide">
+                                        <div class="images-product__sale">Шелк</div>
+                                        <div class="images-product__image">
+                                            <img src="./img/products/full_belinda1.jpg" width="284" height="308" alt="">
+                                        </div>
+                                    </a>
+                                    <a href="" class="images-product__mainslide">
+                                        <div class="images-product__sale">-30%</div>
+                                        <div class="images-product__image">
+                                            <img src="./img/products/full_belinda1.jpg" width="284" height="308" alt="">
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="images-product__subslider _swiper">
+                                    <div class="images-product__subslide">
+                                        <div class="images-product__subimage _ibg">
+                                            <img src="./img/products/full_belinda1.jpg"  alt="">
+                                        </div>
+                                    </div>
+                                    <div class="images-product__subslide">
+                                        <div class="images-product__subimage _ibg">
+                                            <img src="./img/products/full_belinda1.jpg"  alt="">
+                                        </div>
+                                    </div>
+                                    <div class="images-product__subslide">
+                                        <div class="images-product__subimage _ibg">
+                                            <img src="./img/products/full_belinda1.jpg"  alt="">
+                                        </div>
+                                    </div>
+                                    <div class="images-product__subslide">
+                                        <div class="images-product__subimage _ibg">
+                                            <img src="./img/products/full_belinda1.jpg" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- цена доставка и проч. -->
+                            <div class="product__body body-product">
+                                <div class="body-product__top">
+                                    <a href="" class="body-product__compare"><span>Сравнить</span></a>
+                                    <div class="body-product__stock">Есть в наличии</div>
+                                </div>
+                                <div class="body-product__actions actions-product">
+                                    <div class="actions-product__row">
+                                        <div class="actions-product__column">
+                                            <div class="actions-product__price actions-product__price_old rub">
+                                                119 500
+                                            </div>
+                                            <div class="actions-product__price">
+                                                83 650
+                                            </div>
+                                        </div>
+                                        <!-- делаем количество товара -->
+                                        <div class="actions-product__column">
+                                            <div class="actions-product__quantity quantity">
+                                                <div class="quantity__button quantity__button_minus">
+                                                </div>
+                                                <div class="quantity__input">
+                                                    <input autocomplete="off" type="text" name="form[]" value="1">
+                                                </div>
+                                                <div class="quantity__button quantity__button_plus">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- корзина -->
+                                        <div class="actions-product__column">
+                                            <a href="" class="actions-product__cart">
+                                                <span>Добавить в корзину</span>
+                                            </a>
+                                        </div>
+                                        
+                                    </div>
+                                </div>
+                                <!-- в стоимость товара включено: -->
+                                <div class="body-product__include include-product">
+                                    <div class="include-product__title">В стоимость платья входит:</div>
+                                    <div class="include-product__items">
+                                        <div class="include-product__item">
+                                            <div class="include-product__icon">
+                                                <img src="./img/products/long-dress-svgrepo-com.svg" width="45" height="45" alt="">
+                                            </div>
+                                            <div class="include-product__text">Домашняя примерка</div>
+                                        </div>
+                                        <div class="include-product__item">
+                                            <div class="include-product__icon">
+                                                <img src="./img/products/delivery-svgrepo-com.svg" width="45" height="45" alt="">
+                                            </div>
+                                            <div class="include-product__text">Бесплатная доставка</div>
+                                        </div>
+                                        <div class="include-product__item">
+                                            <div class="include-product__icon">
+                                                <img src="./img/products/guarantee-svgrepo-com.svg" width="45" height="45" alt="">
+                                            </div>
+                                            <div class="include-product__text">Гарантия 3 мес.</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- tabs -->
+                        <div class="product__info info-product _tabs">
+                            <nav class="info-product__nav">
+                                <div class="info-product__item _tabs-item _active">
+                                    <span>Рекомендации</span>    
+                                </div>
+                                <div class="info-product__item _tabs-item">
+                                    <span>Характеристики</span> 
+                                </div>
+                            </nav>
+                            <div class="info-product__boby">
+                                <div class="info-product__block _tabs-block _active">
+                                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Expedita, voluptas ducimus ipsa perspiciatis dolorem commodi aut, tempora minima modi libero deleniti laboriosam consequatur maxime dignissimos! Maxime soluta cumque fuga est! Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>  <br>
+                                    <p>Quisquam optio ad quod illum deleniti maxime eos odit cum? Sunt vitae assumenda eum rerum. Ipsum dignissimos quod explicabo, temporibus libero minima.</p>
+                                </div>
+                                <div class="info-product__block _tabs-block">
+                                    <table class="info-product__table">
+                                        <tr>
+                                            <td> 
+                                                <div class="info-product__label">Цвет:</div>
+                                            </td>
+                                            <td>
+                                                <div class="info-product__value">Белый, серебристый</div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td> 
+                                                <div class="info-product__label">Материал:</div>
+                                            </td>
+                                            <td>
+                                                <div class="info-product__value">100% шелк</div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td> 
+                                                <div class="info-product__label">Производитель:</div>
+                                            </td>
+                                            <td>
+                                                <div class="info-product__value">Италия</div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td> 
+                                                <div class="info-product__label">Размеры:</div>
+                                            </td>
+                                            <td>
+                                                <div class="info-product__value">xs, s, m, l, xl,xll</div>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- похожие товары -->
+                        <section class="product__goods goods-product">
+                            <h2 class="goods-product__title">Похожие товары</h2>
+                            <div class="goods-product__items items-products">
+                                <div class="items-products__column">
+                                        <div class="item-product">
+                                            <div class="item-product__labels">
+                                            </div>
+                                            <a href="" class="item-product__image">
+                                                <picture><source srcset="img/dress.jpg" type="image/webp"><img width="200" height="160" src="img/dress.jpg" alt="Milana.Italy."></picture>
+                                            </a>
+                                            <div class="item-product__body">
+                                                <a href="" class="item-product__title"><span>Платье Luna.</span> Italy. Шелк/шифон, бисер</a>
+                                                <div class="item-product__footer">
+                                                    <div class="item-product__old-price rub">74 490</div>
+                                                    <a href="" class="item-product__add"></a>
+                                                    <div class="item-product__price rub">59 600</div>
+                                                </div>
+                                            </div>
+                                            <!-- оболочка при наведении курсора -->
+                                            <div class="item-product__hover hover-item-product">
+                                                <div class="hover-item-product__title">
+                                                    <span>Платье Luna.</span> <br> Italy. Шелк/шифон, бисер
+                                                </div>
+                                                <div class="hover-item-product__options options-item-product">
+                                                    <div class="options-item-product__item">
+                                                        <div class="options-item-product__label">Крой:</div>
+                                                        <div class="options-item-product__value">прямой</div>
+                                                    </div>
+                                                    <div class="options-item-product__item">
+                                                        <div class="options-item-product__label">Цвет:</div>
+                                                        <div class="options-item-product__value">кремовый</div>
+                                                    </div>
+                                                    <div class="options-item-product__item">
+                                                        <div class="options-item-product__label"> Фасон:</div>
+                                                        <div class="options-item-product__value">Оптимальный</div>
+                                                    </div>
+                                                </div>
+                                                <a href="" class="hover-item-product__cart"></a>
+                                                <div class="hover-item-product__footer">
+                                                    <div class="hover-item-product__old-price rub">74 490</div>
+                                                    <div class="hover-item-product__stock">Есть в наличии</div>
+                                                    <div class="hover-item-product__price rub">59 600</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                </div>
+                                <div class="items-products__column">
+                                        <div class="item-product">
+                                            <div class="item-product__labels">
+                                            </div>
+                                            <a href="" class="item-product__image">
+                                                <picture><source srcset="img/dress.jpg" type="image/webp"><img width="200" height="160" src="img/dress.jpg" alt="Milana.Italy."></picture>
+                                            </a>
+                                            <div class="item-product__body">
+                                                <a href="" class="item-product__title"><span>Платье Luna.</span> Italy. Шелк/шифон, бисер</a>
+                                                <div class="item-product__footer">
+                                                    <div class="item-product__old-price rub">74 490</div>
+                                                    <a href="" class="item-product__add"></a>
+                                                    <div class="item-product__price rub">59 600</div>
+                                                </div>
+                                            </div>
+                                            <!-- оболочка при наведении курсора -->
+                                            <div class="item-product__hover hover-item-product">
+                                                <div class="hover-item-product__title">
+                                                    <span>Платье Luna.</span> <br> Italy. Шелк/шифон, бисер
+                                                </div>
+                                                <div class="hover-item-product__options options-item-product">
+                                                    <div class="options-item-product__item">
+                                                        <div class="options-item-product__label">Крой:</div>
+                                                        <div class="options-item-product__value">прямой</div>
+                                                    </div>
+                                                    <div class="options-item-product__item">
+                                                        <div class="options-item-product__label">Цвет:</div>
+                                                        <div class="options-item-product__value">кремовый</div>
+                                                    </div>
+                                                    <div class="options-item-product__item">
+                                                        <div class="options-item-product__label"> Фасон:</div>
+                                                        <div class="options-item-product__value">Оптимальный</div>
+                                                    </div>
+                                                </div>
+                                                <a href="" class="hover-item-product__cart"></a>
+                                                <div class="hover-item-product__footer">
+                                                    <div class="hover-item-product__old-price rub">74 490</div>
+                                                    <div class="hover-item-product__stock">Есть в наличии</div>
+                                                    <div class="hover-item-product__price rub">59 600</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                </div>
+                                <div class="items-products__column">
+                                        <div class="item-product">
+                                            <div class="item-product__labels">
+                                            </div>
+                                            <a href="" class="item-product__image">
+                                                <picture><source srcset="img/woman.jpg" type="image/webp"><img width="200" height="160" src="img/woman.jpg" alt="Milana.Italy."></picture>
+                                            </a>
+                                            <div class="item-product__body">
+                                                <a href="" class="item-product__title"><span>Платье Lola.</span> Milan. Шелк/шифон, бисер</a>
+                                                <div class="item-product__footer">
+                                                    <div class="item-product__old-price rub">88 490</div>
+                                                    <a href="" class="item-product__add"></a>
+                                                    <div class="item-product__price rub">59 600</div>
+                                                </div>
+                                            </div>
+                                            <!-- оболочка при наведении курсора -->
+                                            <div class="item-product__hover hover-item-product">
+                                                <div class="hover-item-product__title">
+                                                    <span>Платье Luna.</span> <br> Italy. Шелк/шифон, бисер
+                                                </div>
+                                                <div class="hover-item-product__options options-item-product">
+                                                    <div class="options-item-product__item">
+                                                        <div class="options-item-product__label">Крой:</div>
+                                                        <div class="options-item-product__value">прямой</div>
+                                                    </div>
+                                                    <div class="options-item-product__item">
+                                                        <div class="options-item-product__label">Цвет:</div>
+                                                        <div class="options-item-product__value">кремовый</div>
+                                                    </div>
+                                                    <div class="options-item-product__item">
+                                                        <div class="options-item-product__label"> Фасон:</div>
+                                                        <div class="options-item-product__value">Оптимальный</div>
+                                                    </div>
+                                                </div>
+                                                <a href="" class="hover-item-product__cart"></a>
+                                                <div class="hover-item-product__footer">
+                                                    <div class="hover-item-product__old-price rub">74 490</div>
+                                                    <div class="hover-item-product__stock">Есть в наличии</div>
+                                                    <div class="hover-item-product__price rub">59 600</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                </div>
+                            </div>
+                        </section>
+                    </section>
+                    <!-- новости и отзывы -->
+                    <div class="page__content-side">
+                        <div class="page__side-news news-side">
+                            <a href="" class="news-side__title side-title">
+                                Fashion 2021
+                            </a>
+                            <div class="news-side__items">
+                                <div class="news-side__item">
+                                    <a href="" class="news-side__label">Расспродажа зимней коллекции 2021</a>
+                                    <div class="news-side__body">
+                                        <div class="news-side__date"> <span>30</span> мар</div>
+                                        <div class="news-side__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus assumenda saepe eligendi praesentium nam!</div>
+                                    </div>
+                                </div>
+                                <div class="news-side__item">
+                                    <a href="" class="news-side__label">Поступления новой коллекции лето 2021</a>
+                                    <div class="news-side__body">
+                                        <div class="news-side__date"> <span>20</span> апр</div>
+                                        <div class="news-side__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus assumenda saepe eligendi praesentium nam!</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="page__side-reviews reviews-side">
+                            <a href="" class="reviews-side__title side-title">
+                                Отзывы о нас
+                            </a>
+                            <div class="reviews-side__items">
+                                <a href="" class="reviews-side__item">
+                                    <div class="reviews-side__header">
+                                        <div class="reviews-side__user">Галина Юрьевна</div>
+                                        <div class="reviews-side__date">17.08.2020</div>
+                                    </div>
+                                    <div class="reviews-side__body">
+                                        Спасибо! Все очень круто, дай Бог вам здоровья!Спасибо! Все очень круто, дай Бог вам здоровья!Спасибо! Все очень круто, дай Бог вам здоровья!
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="reviews-side__items">
+                                <a href="" class="reviews-side__item">
+                                    <div class="reviews-side__header">
+                                        <div class="reviews-side__user">Маргарита Рифкатовна</div>
+                                        <div class="reviews-side__date">22.09.2020</div>
+                                    </div>
+                                    <div class="reviews-side__body">
+                                        Спасибо! Все очень круто, дай Бог вам здоровья!Спасибо! Все очень круто, дай Бог вам здоровья!Спасибо! Все очень круто, дай Бог вам здоровья!
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="page__bottom">
+                <div class="page_info-menu info-menu">
+                    <div class="info-menu__container _container">
+                        <div class="info-menu__body">
+                            <div class="info-menu__line">
+                                <div class="info-menu__label">Дополнительная информация:</div>
+                                <ul class="info-menu__list">
+                                    <li>
+                                        <a href="" class="info-menu__link">Скидки</a>
+                                    </li>
+                                    <li>
+                                        <a href="" class="info-menu__link">Кешбек</a>
+                                    </li>
+                                    <li>
+                                        <a href="" class="info-menu__link">Бренды</a>
+                                    </li>
+                                    <li>
+                                        <a href="" class="info-menu__link">Отзывы</a>
+                                    </li>
+                                    <li>
+                                        <a href="" class="info-menu__link">Контакты</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="info-menu__line">
+                                <div class="info-menu__label">Обратная связь:</div>
+                                <ul class="info-menu__list">
+                                    <li>
+                                        <a href="" class="info-menu__link">Доставка</a>
+                                    </li>
+                                    <li>
+                                        <a href="" class="info-menu__link">Примерка</a>
+                                    </li>
+                                    <li>
+                                        <a href="" class="info-menu__link">Оплата</a>
+                                    </li>
+                                    <li>
+                                        <a href="" class="info-menu__link">Гарантия</a>
+                                    </li>
+                                    <li>
+                                        <a href="" class="info-menu__link">Возврат</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="info-menu__logotipio">
+                            <a href="" class="info-menu__logo-link">
+                                <img src="././img/logo.png" width="170" height="80" alt="">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer class="footer">
+            <div class="footer__content _container">
+                <div class="footer__body">
+                    <div class="footer__column">
+                        <div class="footer__block block-footer">
+                            <div class="block-footer__column">
+                                <a href="" class="logo-footer">
+                                    <img src="./img/bottom/logo_background.png" width="163" height="98" alt="">
+                                </a>
+                                <div class="block-footer__phones">
+                                    <p>
+                                        <a href="tel:83431251729" class="block-footer__pnone">8-343-125-17-29</a>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="block-footer__column">
+                                <div class="block-footer__delivery delivery-footer">
+                                    <div class="delivery-footer__title">Доставка осуществляется:</div>
+                                    <div class="delivery-footer__items">
+                                        <div class="delivery-footer__item">
+                                            <img src="./img/bottom/cdek.png" width="110" height="30" alt="">
+                                        </div>
+                                        <div class="delivery-footer__item">
+                                            <img src="./img/bottom/dhl.png" width="60" height="60" alt="">
+                                        </div>
+                                        <div class="delivery-footer__item">
+                                            <img src="./img/bottom/Pony_Express_Logo.png" width="60" height="60"  alt="">
+                                        </div>
+                                        <div class="delivery-footer__item">
+                                            <img src="./img/bottom/9334_boxberry_logo.png" width="90" height="32" alt="">
+                                        </div>
+                                        <div class="delivery-footer__item">
+                                            <img src="./img/bottom/line.svg" width="60" height="60" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="footer__payments">
+                            <div class="footer__payments-item">
+                                <img src="./img/bottom/AE.jpg" width="45" height="30" alt="">
+                            </div>
+                            <div class="footer__payments-item">
+                                <img src="./img/bottom/visa.jpg" width="45" height="30" alt="">
+                            </div>
+                            <div class="footer__payments-item">
+                                <img src="./img/bottom/MC.webp" width="45" height="30" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="footer__column">
+                        <div class="footer__map mapfooter">
+                            <div class="mapfooter__map" id="map"></div>
+                        </div>
+                    </div>
+                </div> 
+                <div class="footer__bottom _container">
+                    <div class="footer__copy">© 2021 Все права защищены </div>
+                    <div class="footer__social social-footer">
+                        <a href="" class="social-footer__item">
+                            <img src="./img/social/fb.svg" alt="">
+                        </a>
+                        <a href="" class="social-footer__item">
+                            <img src="./img/social/Group.svg" alt="">
+                        </a>
+                        <a href="" class="social-footer__item">
+                            <img src="./img/social/insta.svg" alt="">
+                        </a>
+                        <a href="" class="social-footer__item">
+                            <img src="./img/social/telegram.png" width="32" height="32" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <!-- Проверка на работоспособность -->
+    <!-- <script type="text/javascript">
+        if (window.jQuery) alert("jQuery подключен");
+        else alert("jQuery не подключен");
+    </script>  -->
+    <script src="./js/map.js"></script>
+    <script src="./js/swiper.min.js"></script>
+    <script src="./js/functions.js"></script>
+    <script src="./js/sliders.js"></script>
+    <script src="./js/script.js"></script>
+    <!-- <script src="./js/forms.js"></script> -->
+</body>
+</html>
